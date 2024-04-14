@@ -18,7 +18,7 @@ const fs = require("fs");
   //aria-label="検索"
   //aria-label doesn't much though
   await page.waitForSelector('textarea[title="検索"]', { visible: true });
-  await page.type('textarea[title="検索"]', "nhknews");
+  await page.type('textarea[title="検索"]',searchQuery);
 
   await Promise.all([
     page.waitForNavigation({ waitUntil: "domcontentloaded" }),
