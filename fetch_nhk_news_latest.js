@@ -11,9 +11,6 @@ const fs = require("fs");
   const searchQuery = "nhknews";
   const browser = await puppeteer.launch();
   const [page] = await browser.pages();
-  const nhk_news_tab_selector = 'div[role="navigation"]:nth-child(6)';
-  const nhk_news_title_selector = 'div.SoAPf  div[aria-level="3"]';
-  const nhk_news_contents_selector = 'div.SoAPf div.GI74Re';
   let article = { title: "", content: "" };
   
   //4_10
